@@ -62,7 +62,6 @@ void selection_sort(int A[],int size) // selection sort
 		{				
 		swap(&A[i], &A[min_index]);
 		}
-		printf("%d ",A[i]);
 	}
 	
 }
@@ -126,9 +125,9 @@ int main()
 	printf("%d ",C[i]);	*/
 	
 	
-	/*selection_sort(B,4);	
-	for(int i = 3;i>=0;i--)
-	printf("%d ",B[i]); */
+	selection_sort(B,4);	
+	for(int i = 0;i<4;i++)
+		printf("%d ",B[i]); 
 	
 	
 	//printf("Min value: %d",B[min_pos(B,(sizeof B)/4)]); // print the minimum value in B
@@ -138,9 +137,9 @@ int main()
 	/*for(int i = 0;i<6;i++)
 		printf("%d ",A[i]);*/		
 		
-	bubble_sort_str(ch,5); //bubble sort for string arrays
+/*	bubble_sort_str(ch,5); //bubble sort for string arrays
 	for(int i = 0;i<5;i++) // print values in char array loop
-		printf("%s ",ch[i]); 
+		printf("%s ",ch[i]); */
 	
 	return 0;
 }
